@@ -3,21 +3,28 @@ import { view, Text, StyleSheet, FlatList } from "react-native";
 
 const ListScreen = () => {
   const friends = [
-    { name: "Friend #1", key: "1" },
-    { name: "Friend #2", key: "2" },
-    { name: "Friend #3", key: "3" },
-    { name: "Friend #4", key: "4" },
-    { name: "Friend #5", key: "5" },
-    { name: "Friend #6", key: "6" },
-    { name: "Friend #7", key: "7" },
-    { name: "Friend #8", key: "8" },
-    { name: "Friend #9", key: "9" }
+    { name: "Friend #1", age: 12 },
+    { name: "Friend #2", age: 24 },
+    { name: "Friend #3", age: 36 },
+    { name: "Friend #4", age: 48 },
+    { name: "Friend #5", age: 60 },
+    { name: "Friend #6", age: 72 },
+    { name: "Friend #7", age: 84 },
+    { name: "Friend #8", age: 96 },
+    { name: "Friend #9", age: 108 }
   ];
   return (
     <FlatList
+      // horizontal
+      // showsHorizontalScrollIndicator={false}
+      keyExtractor={friend => friend.name}
       data={friends}
       renderItem={({ item }) => {
-        return <Text style={styles.itemStyle}>{item.name}</Text>;
+        return (
+          <Text style={styles.itemStyle}>
+            {item.name} - Age {item.age}
+          </Text>
+        );
       }}
     />
   );
@@ -25,11 +32,7 @@ const ListScreen = () => {
 
 const styles = StyleSheet.create({
   itemStyle: {
-    borderRadius: 4,
-    borderWidth: 1,
-    borderColor: "#d6d7da",
-    padding: 10,
-    fontSize: 20
+    marginVertical: 50
   }
 });
 
