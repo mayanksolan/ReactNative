@@ -12,25 +12,33 @@ const BoxScreen = () => {
 };
 const styles = StyleSheet.create({
   viewStyle: {
-    borderWidth: 3,
+    borderWidth: 1,
     borderColor: "black",
-    height: 200,
-    flexDirection: "row"
+    height: 200
   },
   textOneStyle: {
     borderWidth: 3,
-    borderColor: "orange",
-    flex: 4
+    borderColor: "darkred",
+    backgroundColor: "red",
+    height: 100,
+    width: 125
   },
   textTwoStyle: {
     borderWidth: 3,
-    borderColor: "orange",
-    flex: 4
+    borderColor: "darkgreen",
+    backgroundColor: "green",
+    height: 100,
+    width: 125,
+    alignSelf: "center"
   },
   textThreeStyle: {
     borderWidth: 3,
-    borderColor: "orange",
-    flex: 2
+    borderColor: "darkblue",
+    backgroundColor: "purple",
+    height: 100,
+    width: 125,
+    position: "absolute",
+    alignSelf: "flex-end"
   }
 });
 
