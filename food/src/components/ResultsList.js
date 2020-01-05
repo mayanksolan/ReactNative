@@ -17,7 +17,6 @@ const ResultsList = ({ title, results, navigation }) => {
     <View style={styles.container}>
       <Text style={styles.titleStyle}>{title}</Text>
       <Text style={styles.titleStyle}>{title}</Text>
-      <Text style={styles.titleStyle}>{title}</Text>
       <FlatList
         horizontal={true}
         showsHorizontalScrollIndicator={false}
