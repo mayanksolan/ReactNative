@@ -16,6 +16,7 @@ const ResultsList = ({ title, results, navigation }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.titleStyle}>{title}</Text>
+      <Text style={styles.titleStyle}>Mayank</Text>
       <Text style={styles.titleStyle}>{title}</Text>
       <FlatList
         horizontal={true}
