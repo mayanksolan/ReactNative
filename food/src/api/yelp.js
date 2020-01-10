@@ -20,4 +20,4 @@ export default axios.create({
 // 4. Higher-order components
 // 5. State vs Props in React
 // 6. jsonwebtoken - what it is comprised of and how it changes based on data (basics)
-// 7. Closure in javascript
+// 7. Closure in javascript, how it works
